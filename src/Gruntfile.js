@@ -7,7 +7,8 @@ module.exports = function (grunt) {
                 files: [
                     "./scripts/**/*.js",
                     "./index.html",
-                    "./styles/**/*.css",
+					"./styles/**/*.css",
+					"./img/*",
                     "!node_modules/**/*.js"
                 ],
                 tasks: ["eslint", "browserify", "uglify", "copy"],
@@ -54,7 +55,8 @@ module.exports = function (grunt) {
                 files: [
                     // includes files within path
                     { expand: true, src: ["index.html"], dest: "../dist/", filter: "isFile" },
-                    { expand: true, src: ["styles/*.css"], dest: "../dist/", filter: "isFile"}
+					{ expand: true, src: ["styles/*.css"], dest: "../dist/", filter: "isFile"},
+					{ expand: true, src: ["img/*"], dest: "../dist/", filter: "isFile"}
                 ]
             }
         }
