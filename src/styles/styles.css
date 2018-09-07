@@ -41,16 +41,19 @@
 
 #about {
 	padding-top:67px;
-	margin-bottom: 32px;
 }
 
 #about__text{
 	width: 600px;
 }
 
+#projects {
+	padding-top: 67px;
+}
+
 #projects__img{
 	margin: 16px auto;
-	max-width: 1000px;
+	max-width: 900px;
 }
 
 #projects img{
@@ -59,9 +62,20 @@
 	object-fit: contain;
 }
 
+#project__title {
+	width: 400px;
+}
+
 #otc{
 	border: 2px solid rgba(0, 0, 0, .3);
 	border-radius: 5px;
+}
+
+#skills {
+	padding-top:67px;
+	max-width: 900px;
+	margin: 0 auto;
+	margin-bottom: 150px;
 }
 
 #skills__list{
@@ -69,6 +83,7 @@
 }
 
 #skills__list li{
+	margin: 16px;
 	display: inline;
 }
 
